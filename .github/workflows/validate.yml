@@ -1,0 +1,42 @@
+name: Validate index.json
+
+on:
+  pull_request:
+    paths:
+      - "index.json"
+      - "schema.json"
+      - ".github/scripts/**"
+      - ".github/workflows/validate.yml"
+  push:
+    branches: [main]
+    paths:
+      - "index.json"
+      - "schema.json"
+      - ".github/scripts/**"
+  # 允许手动触发，用于定期回归探测所有 downloadUrl
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: .github/scripts/package.json
+
+      - name: Install validator deps
+        working-directory: .github/scripts
+        run: npm install --no-audit --no-fund
+
+      - name: Run validation
+        run: node .github/scripts/validate.mjs

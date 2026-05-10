@@ -72,6 +72,17 @@
 4. 更新 `updatedAt` 字段为当天日期
 5. 在 `README.md` 的表格和详情区补充条目
 6. 提交 PR，标题格式：`feat: add plugin <name> v<version>`
+7. 等待 CI 校验：每个 PR 会自动跑 `.github/workflows/validate.yml`，校验
+   - `index.json` 是否符合 `schema.json`
+   - `name` 是否 kebab-case 且不重名、`version` 是否合法语义化版本、`changelog[0]` 是否对应当前版本
+   - 每个 `downloadUrl` 是否实际可下载且像 ZIP
+
+> 本地预先跑一遍校验：
+>
+> ```bash
+> cd .github/scripts && npm install
+> cd ../.. && node .github/scripts/validate.mjs
+> ```
 
 **ZIP 包要求**（由 [`Dian-plugin-template`](https://github.com/FinalDevHQ/Dian-plugin-template) 打包脚本生成）：
 
