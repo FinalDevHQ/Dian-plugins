@@ -1,0 +1,23 @@
+{
+  "$schema": "./schema.json",
+  "apiVersion": "1",
+  "updatedAt": "2026-05-10",
+  "plugins": [
+    {
+      "name": "ping-pong",
+      "displayName": "Ping Pong",
+      "description": "可自定义触发指令与回复内容的 ping-pong 插件，附带 Web UI 实时查看统计与修改配置。",
+      "version": "1.0.0",
+      "author": "Dian",
+      "icon": "🏓",
+      "tags": ["示例", "工具", "UI"],
+      "hasUI": true,
+      "minRuntimeVersion": "0.1.0",
+      "homepage": "https://github.com/FinalDevHQ/Dian-plugin-template",
+      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugins/releases/download/ping-pong-v1.0.0/ping-pong.zip",
+      "changelog": [
+        { "version": "1.0.0", "date": "2026-05-10", "notes": "初始版本，支持自定义指令、回复、Web UI 统计面板。" }
+      ]
+    }
+  ]
+}
