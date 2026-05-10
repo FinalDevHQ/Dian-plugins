@@ -14,7 +14,7 @@
       "hasUI": true,
       "minRuntimeVersion": "0.1.0",
       "homepage": "https://github.com/FinalDevHQ/Dian-plugin-template",
-      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugins/releases/download/ping-pong-v1.0.0/ping-pong.zip",
+      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-template/releases/download/v1.0.1/ping-pong.zip",
       "changelog": [
         { "version": "1.0.0", "date": "2026-05-10", "notes": "初始版本，支持自定义指令、回复、Web UI 统计面板。" }
       ]
