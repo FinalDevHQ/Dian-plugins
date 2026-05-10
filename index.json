@@ -18,6 +18,22 @@
       "changelog": [
         { "version": "1.0.0", "date": "2026-05-10", "notes": "初始版本，支持自定义指令、回复、Web UI 统计面板。" }
       ]
+    },
+    {
+      "name": "dian-help",
+      "displayName": "Help",
+      "description": "发送可配置的 help 指令，自动列出当前 Dian 实例所有已注册的指令；附 Web UI 配置面板。",
+      "version": "1.0.0",
+      "author": "FinalDevHQ",
+      "icon": "📖",
+      "tags": ["系统", "工具", "UI"],
+      "hasUI": true,
+      "minRuntimeVersion": "0.1.0",
+      "homepage": "https://github.com/FinalDevHQ/Dian-plugin-help",
+      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-help/releases/download/v1.0.0/dian-help.zip",
+      "changelog": [
+        { "version": "1.0.0", "date": "2026-05-10", "notes": "初始版本，支持自定义触发指令、按 bot 范围列出已注册指令、Web UI 实时配置。" }
+      ]
     }
   ]
 }
