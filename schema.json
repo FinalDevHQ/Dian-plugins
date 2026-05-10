@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Dian Plugin Registry",
+  "type": "object",
+  "required": ["apiVersion", "updatedAt", "plugins"],
+  "properties": {
+    "apiVersion": { "type": "string", "enum": ["1"] },
+    "updatedAt":  { "type": "string", "description": "ISO 日期，格式 YYYY-MM-DD" },
+    "plugins": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/Plugin" }
+    }
+  },
+  "definitions": {
+    "Plugin": {
+      "type": "object",
+      "required": ["name", "displayName", "description", "version", "author", "downloadUrl"],
+      "properties": {
+        "name":               { "type": "string", "description": "插件唯一标识（与 @Plugin.name 保持一致，kebab-case）" },
+        "displayName":        { "type": "string", "description": "在插件市场展示的名称" },
+        "description":        { "type": "string", "description": "一行简介，建议 ≤ 60 字" },
+        "version":            { "type": "string", "description": "语义化版本号，如 1.0.0" },
+        "author":             { "type": "string", "description": "作者名或 GitHub 用户名" },
+        "icon":               { "type": "string", "description": "单个 emoji 或图片 URL（http/https/绝对路径）" },
+        "tags":               { "type": "array", "items": { "type": "string" }, "description": "分类标签，建议 1-3 个" },
+        "hasUI":              { "type": "boolean", "description": "插件是否包含 Web UI" },
+        "minRuntimeVersion":  { "type": "string", "description": "要求 Dian 运行时的最低版本" },
+        "homepage":           { "type": "string", "format": "uri", "description": "插件主页 / 文档地址" },
+        "downloadUrl":        { "type": "string", "format": "uri", "description": "ZIP 下载直链" },
+        "changelog": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["version", "date", "notes"],
+            "properties": {
+              "version": { "type": "string" },
+              "date":    { "type": "string" },
+              "notes":   { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}
