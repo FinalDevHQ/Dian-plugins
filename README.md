@@ -11,6 +11,7 @@
 | 图标 | 名称 | 版本 | 简介 | UI |
 |------|------|------|------|----|
 | 🏓 | [ping-pong](#ping-pong) | 1.0.0 | 可自定义指令与回复的 ping-pong 插件，附 Web UI 统计面板 | ✅ |
+| 📖 | [dian-help](#dian-help) | 1.0.0 | 发送可配置的 help 指令，列出当前 Dian 实例所有已注册指令，附 Web UI 配置面板 | ✅ |
 
 ---
 
@@ -23,6 +24,16 @@
 - **最低运行时版本**：0.1.x
 - **下载**：[ping-pong-v1.0.0.zip](https://github.com/FinalDevHQ/Dian-plugins/releases/download/ping-pong-v1.0.0/ping-pong.zip)
 发送 `!ping`（可自定义），机器人回复 `pong! 🏓`（可自定义）。Web UI 提供实时统计面板与配置修改入口，修改 reply 立即生效，无需重启。
+
+### dian-help
+
+- **作者**：FinalDevHQ
+- **标签**：系统 · 工具 · UI
+- **最低运行时版本**：0.1.x
+- **下载**：[dian-help.zip](https://github.com/FinalDevHQ/Dian-plugin-help/releases/download/v1.0.0/dian-help.zip)
+- **源码**：<https://github.com/FinalDevHQ/Dian-plugin-help>
+
+发送可配置的 help 指令（默认 `help`），机器人按 bot 作用域**自动列出当前 Dian 实例所有已注册的指令**，无需开发者手动维护。附带 Web UI 配置面板，可即时调整触发指令、回复抬头、bot 白名单等，修改立即生效。
 
 ---
 
