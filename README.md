@@ -12,6 +12,7 @@
 |------|------|------|------|----|
 | 🏓 | [ping-pong](#ping-pong) | 1.0.0 | 可自定义指令与回复的 ping-pong 插件，附 Web UI 统计面板 | ✅ |
 | 📖 | [dian-help](#dian-help) | 1.0.0 | 发送可配置的 help 指令，列出当前 Dian 实例所有已注册指令，附 Web UI 配置面板 | ✅ |
+| 🛠️ | [dian-dev-sync](#dian-dev-sync) | 1.0.0 | 远程开发同步服务，WebSocket 推送构建产物并热重载 | ✅ |
 
 ---
 
@@ -34,6 +35,16 @@
 - **源码**：<https://github.com/FinalDevHQ/Dian-plugin-help>
 
 发送可配置的 help 指令（默认 `help`），机器人按 bot 作用域**自动列出当前 Dian 实例所有已注册的指令**，无需开发者手动维护。附带 Web UI 配置面板，可即时调整触发指令、回复抬头、bot 白名单等，修改立即生效。
+
+### dian-dev-sync
+
+- **作者**：FinalDev
+- **标签**：系统 · 工具 · UI
+- **最低运行时版本**：0.1.x
+- **下载**：[dian-dev-sync.zip](https://github.com/FinalDevHQ/Dian-plugin-dev-sync/releases/download/v1.0.0/dian-dev-sync.zip)
+- **源码**：<https://github.com/FinalDevHQ/Dian-plugin-dev-sync>
+
+通过 WebSocket 服务端接收开发工具推送的插件构建产物（base64 zip），自动解压写入 `plugins/<name>/` 目录并热重载。附带 Web 管理界面，支持在线配置 Token/端口、查看实时会话与同步历史。
 
 ---
 
