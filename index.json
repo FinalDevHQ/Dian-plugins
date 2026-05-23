@@ -1,14 +1,14 @@
 {
   "$schema": "./schema.json",
   "apiVersion": "1",
-  "updatedAt": "2026-05-18",
+  "updatedAt": "2026-05-23",
   "plugins": [
     {
       "name": "ping-pong",
       "displayName": "Ping Pong",
       "description": "可自定义触发指令与回复内容的 ping-pong 插件，附带 Web UI 实时查看统计与修改配置。",
       "version": "1.0.0",
-      "author": "Dian",
+      "author": "FinalDevHQ",
       "icon": "🏓",
       "tags": ["示例", "工具", "UI"],
       "hasUI": true,
@@ -26,7 +26,7 @@
       "version": "1.0.0",
       "author": "FinalDevHQ",
       "icon": "📖",
-      "tags": ["系统", "工具", "UI"],
+      "tags": ["系统", "工具"],
       "hasUI": true,
       "minRuntimeVersion": "0.1.0",
       "homepage": "https://github.com/FinalDevHQ/Dian-plugin-help",
@@ -40,15 +40,31 @@
       "displayName": "Dev Sync",
       "description": "远程开发同步服务，通过 WebSocket 实时接收构建产物，自动解压并热重载到 Dian 实例。",
       "version": "1.0.0",
-      "author": "FinalDev",
+      "author": "FinalDevHQ",
       "icon": "🛠️",
-      "tags": ["系统", "工具", "UI"],
+      "tags": ["系统", "工具"],
       "hasUI": true,
       "minRuntimeVersion": "0.1.0",
       "homepage": "https://github.com/FinalDevHQ/Dian-plugin-dev-sync",
       "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-dev-sync/releases/download/v1.0.0/dian-dev-sync.zip",
       "changelog": [
         { "version": "1.0.0", "date": "2026-05-18", "notes": "初始版本，支持 WebSocket 认证、构建产物远程推送、自动热重载、Web UI 管理与同步历史记录。" }
+      ]
+    },
+    {
+      "name": "github-sub",
+      "displayName": "GitHub 订阅推送",
+      "description": "GitHub 仓库/用户事件订阅推送插件，支持 commit/PR/issue/评论等实时通知，附 Web UI 管理面板。",
+      "version": "1.0.1",
+      "author": "FinalDevHQ",
+      "icon": "🐙",
+      "tags": ["工具", "通知"],
+      "hasUI": true,
+      "minRuntimeVersion": "0.2.0",
+      "homepage": "https://github.com/FinalDevHQ/Dian-plugin-github",
+      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-github/releases/download/v1.0.1/github-sub.zip",
+      "changelog": [
+        { "version": "1.0.0", "date": "2026-05-23", "notes": "初始版本，支持仓库/用户事件订阅、多 Token 轮换、日志持久化、Web UI 管理面板。" }
       ]
     }
   ]

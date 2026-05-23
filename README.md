@@ -13,6 +13,7 @@
 | 🏓 | [ping-pong](#ping-pong) | 1.0.0 | 可自定义指令与回复的 ping-pong 插件，附 Web UI 统计面板 | ✅ |
 | 📖 | [dian-help](#dian-help) | 1.0.0 | 发送可配置的 help 指令，列出当前 Dian 实例所有已注册指令，附 Web UI 配置面板 | ✅ |
 | 🛠️ | [dian-dev-sync](#dian-dev-sync) | 1.0.0 | 远程开发同步服务，WebSocket 推送构建产物并热重载 | ✅ |
+| 🐙 | [github-sub](#github-sub) | 1.0.0 | GitHub 仓库/用户事件订阅推送，附 Web UI 管理面板 | ✅ |
 
 ---
 
@@ -45,6 +46,16 @@
 - **源码**：<https://github.com/FinalDevHQ/Dian-plugin-dev-sync>
 
 通过 WebSocket 服务端接收开发工具推送的插件构建产物（base64 zip），自动解压写入 `plugins/<name>/` 目录并热重载。附带 Web 管理界面，支持在线配置 Token/端口、查看实时会话与同步历史。
+
+### github-sub
+
+- **作者**：FinalDevHQ
+- **标签**：工具 · 通知 · UI
+- **最低运行时版本**：0.1.x
+- **下载**：[github-sub.zip](https://github.com/FinalDevHQ/Dian-plugin-github/releases/download/v1.0.1/github-sub.zip)
+- **源码**：<https://github.com/FinalDevHQ/Dian-plugin-github>
+
+订阅 GitHub 仓库或用户的事件（commit、PR、issue、评论、release 等），定时轮询并在群里推送通知。支持多 Token 轮换、日志持久化。附带 Web UI 管理面板，支持添加/删除订阅、查看日志、切换 Token。
 
 ---
 
@@ -112,8 +123,9 @@
 your-plugin.zip
 ├── index.js        # 插件入口（ESM）
 ├── package.json    # 包含 name / version / description / icon / author
-└── public/         # （可选）Web UI 静态资源
-    └── index.html
+└── assets/         # （可选）Web UI 静态资源（Vite 构建产物）
+    ├── index.html
+    └── ...
 ```
 
 > 使用 [Dian-plugin-template](https://github.com/FinalDevHQ/Dian-plugin-template) 中的 `npm run pack` 可自动生成符合规范的 ZIP。
