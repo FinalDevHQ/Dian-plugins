@@ -1,0 +1,86 @@
+name: Auto Merge Plugin PR
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "index.json"
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    # 只处理来自 github-actions[bot] 的 PR
+    if: github.event.pull_request.user.login == 'github-actions[bot]'
+
+    steps:
+      - name: Checkout PR
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: .github/scripts/package.json
+
+      - name: Install validator deps
+        working-directory: .github/scripts
+        run: npm install --no-audit --no-fund
+
+      - name: Run validation
+        id: validate
+        run: |
+          if node .github/scripts/validate.mjs; then
+            echo "passed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "passed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Comment on failure
+        if: steps.validate.outputs.passed == 'false'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const prNumber = context.payload.pull_request.number;
+            const runUrl = `https://github.com/${owner}/${repo}/actions/runs/${context.runId}`;
+
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number: prNumber,
+              body: `## ✗ 索引校验失败\n\n自动校验未通过，请检查 [构建日志](${runUrl}) 并修复后重新提交。\n\n---\n*由 auto-merge workflow 自动评论*`
+            });
+
+      - name: Approve PR
+        if: steps.validate.outputs.passed == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const prNumber = context.payload.pull_request.number;
+
+            await github.rest.pulls.createReview({
+              owner,
+              repo,
+              pull_number: prNumber,
+              event: 'APPROVE',
+              body: '## ✓ 索引校验通过\n\n自动批准合并。\n\n---\n*由 auto-merge workflow 自动批准*'
+            });
+
+      - name: Squash merge PR
+        if: steps.validate.outputs.passed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr merge ${{ github.event.pull_request.number }} \
+            --repo ${{ github.repository }} \
+            --squash \
+            --auto \
+            --delete-branch
