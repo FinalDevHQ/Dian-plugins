@@ -1,21 +1,22 @@
 {
   "$schema": "./schema.json",
   "apiVersion": "1",
-  "updatedAt": "2026-05-25",
+  "updatedAt": "2026-05-26",
   "plugins": [
     {
       "name": "ping-pong",
       "displayName": "Ping Pong",
-      "description": "可自定义触发指令与回复内容的 ping-pong 插件，附带 Web UI 实时查看统计与修改配置。",
-      "version": "1.0.0",
+      "description": "可自定义触发指令与回复内容的 ping-pong 插件，附带 PluginStore 数据库示例与 Web UI。",
+      "version": "1.1.0",
       "author": "FinalDevHQ",
       "icon": "🏓",
       "tags": ["示例", "工具", "UI"],
       "hasUI": true,
-      "minRuntimeVersion": "0.1.0",
+      "minRuntimeVersion": "0.2.7",
       "homepage": "https://github.com/FinalDevHQ/Dian-plugin-template",
-      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-template/releases/download/v1.0.1/ping-pong.zip",
+      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-template/releases/download/v1.1.0/ping-pong.zip",
       "changelog": [
+        { "version": "1.1.0", "date": "2026-05-26", "notes": "新增 PluginStore 数据库使用示例（!note 指令 + /notes API），更新文档。" },
         { "version": "1.0.0", "date": "2026-05-10", "notes": "初始版本，支持自定义指令、回复、Web UI 统计面板。" }
       ]
     },
@@ -23,15 +24,16 @@
       "name": "dian-help",
       "displayName": "Help",
       "description": "发送可配置的 help 指令，自动列出当前 Dian 实例所有已注册的指令；附 Web UI 配置面板。",
-      "version": "1.0.0",
+      "version": "1.0.6",
       "author": "FinalDevHQ",
       "icon": "📖",
       "tags": ["系统", "工具"],
       "hasUI": true,
       "minRuntimeVersion": "0.1.0",
       "homepage": "https://github.com/FinalDevHQ/Dian-plugin-help",
-      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-help/releases/download/v1.0.0/dian-help.zip",
+      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-help/releases/download/v1.0.6/dian-help.zip",
       "changelog": [
+        { "version": "1.0.6", "date": "2026-05-26", "notes": "CI 统一为自包含构建模式。" },
         { "version": "1.0.0", "date": "2026-05-10", "notes": "初始版本，支持自定义触发指令、按 bot 范围列出已注册指令、Web UI 实时配置。" }
       ]
     },
@@ -39,15 +41,16 @@
       "name": "dian-dev-sync",
       "displayName": "Dev Sync",
       "description": "远程开发同步服务，通过 WebSocket 实时接收构建产物，自动解压并热重载到 Dian 实例。",
-      "version": "1.0.0",
+      "version": "1.0.4",
       "author": "FinalDevHQ",
       "icon": "🛠️",
       "tags": ["系统", "工具"],
       "hasUI": true,
       "minRuntimeVersion": "0.1.0",
       "homepage": "https://github.com/FinalDevHQ/Dian-plugin-dev-sync",
-      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-dev-sync/releases/download/v1.0.0/dian-dev-sync.zip",
+      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-dev-sync/releases/download/v1.0.4/dian-dev-sync.zip",
       "changelog": [
+        { "version": "1.0.4", "date": "2026-05-26", "notes": "迁移至框架 PluginStore，移除独立数据库。" },
         { "version": "1.0.0", "date": "2026-05-18", "notes": "初始版本，支持 WebSocket 认证、构建产物远程推送、自动热重载、Web UI 管理与同步历史记录。" }
       ]
     },
@@ -55,15 +58,16 @@
       "name": "github-sub",
       "displayName": "GitHub 订阅推送",
       "description": "GitHub 仓库/用户事件订阅推送插件，支持 commit/PR/issue/评论等实时通知，附 Web UI 管理面板。",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "author": "FinalDevHQ",
       "icon": "🐙",
       "tags": ["工具", "通知", "UI"],
       "hasUI": true,
       "minRuntimeVersion": "0.2.0",
       "homepage": "https://github.com/FinalDevHQ/Dian-plugin-github",
-      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-github/releases/download/v1.0.1/github-sub.zip",
+      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-github/releases/download/v1.0.2/github-sub.zip",
       "changelog": [
+        { "version": "1.0.2", "date": "2026-05-26", "notes": "CI 统一为自包含构建模式。" },
         { "version": "1.0.1", "date": "2026-05-23", "notes": "初始版本，支持仓库/用户事件订阅、多 Token 轮换、日志持久化、Web UI 管理面板。" }
       ]
     },
@@ -71,16 +75,51 @@
       "name": "dian-plugin-mc",
       "displayName": "MC 服务器查询",
       "description": "Minecraft 服务器状态查询插件，支持 Java Edition SLP 协议、SRV 记录解析、图片渲染、自定义模板、服务器列表管理。",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": "FinalDevHQ",
       "icon": "🎮",
       "tags": ["工具", "游戏", "UI"],
       "hasUI": true,
       "minRuntimeVersion": "0.2.7",
       "homepage": "https://github.com/FinalDevHQ/Dian-plugin-mc",
-      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-mc/releases/download/v1.0.1/dian-plugin-mc.zip",
+      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-mc/releases/download/v1.1.0/dian-plugin-mc.zip",
       "changelog": [
+        { "version": "1.1.0", "date": "2026-05-26", "notes": "查询历史迁移至 PluginStore 持久化存储，支持清空历史。" },
         { "version": "1.0.1", "date": "2026-05-25", "notes": "初始版本，支持 MC 服务器状态查询、图片渲染、自定义模板、服务器列表管理、查询历史、Web UI 管理面板。" }
+      ]
+    },
+    {
+      "name": "dian-plugin-qq-manager",
+      "displayName": "QQ 群管",
+      "description": "QQ 群管权限管理插件，支持主人/群管/黑白名单/群设置，附 Web UI 管理面板。",
+      "version": "1.1.0",
+      "author": "FinalDevHQ",
+      "icon": "🛡️",
+      "tags": ["管理", "权限", "UI"],
+      "hasUI": true,
+      "minRuntimeVersion": "0.2.7",
+      "homepage": "https://github.com/FinalDevHQ/Dian-plugin-qq-manager",
+      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-qq-manager/releases/download/v1.1.0/dian-plugin-qq-manager.zip",
+      "changelog": [
+        { "version": "1.1.0", "date": "2026-05-26", "notes": "启用 PluginStore 表跟踪，新增黑名单提示、退群拉黑、群设置等指令。" },
+        { "version": "1.0.0", "date": "2026-05-20", "notes": "初始版本，支持主人管理、群管角色、黑白名单、Web UI 管理面板。" }
+      ]
+    },
+    {
+      "name": "dian-plugin-puppeteer",
+      "displayName": "Puppeteer 渲染",
+      "description": "Puppeteer 浏览器渲染服务插件，为其他插件提供 HTML 转图片能力。",
+      "version": "1.0.1",
+      "author": "FinalDevHQ",
+      "icon": "🖼️",
+      "tags": ["系统", "工具"],
+      "hasUI": false,
+      "minRuntimeVersion": "0.2.0",
+      "homepage": "https://github.com/FinalDevHQ/Dian-plugin-puppeteer",
+      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-puppeteer/releases/download/v1.0.1/dian-plugin-puppeteer.zip",
+      "changelog": [
+        { "version": "1.0.1", "date": "2026-05-26", "notes": "CI 统一为自包含构建模式。" },
+        { "version": "1.0.0", "date": "2026-05-15", "notes": "初始版本，提供 HTML 转图片渲染 API。" }
       ]
     }
   ]
