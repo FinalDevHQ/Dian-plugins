@@ -10,14 +10,26 @@
       "version": "1.1.0",
       "author": "FinalDevHQ",
       "icon": "🏓",
-      "tags": ["示例", "工具", "UI"],
+      "tags": [
+        "示例",
+        "工具",
+        "UI"
+      ],
       "hasUI": true,
       "minRuntimeVersion": "0.2.7",
       "homepage": "https://github.com/FinalDevHQ/Dian-plugin-template",
       "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-template/releases/download/v1.1.0/ping-pong.zip",
       "changelog": [
-        { "version": "1.1.0", "date": "2026-05-26", "notes": "新增 PluginStore 数据库使用示例（!note 指令 + /notes API），更新文档。" },
-        { "version": "1.0.0", "date": "2026-05-10", "notes": "初始版本，支持自定义指令、回复、Web UI 统计面板。" }
+        {
+          "version": "1.1.0",
+          "date": "2026-05-26",
+          "notes": "新增 PluginStore 数据库使用示例（!note 指令 + /notes API），更新文档。"
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-05-10",
+          "notes": "初始版本，支持自定义指令、回复、Web UI 统计面板。"
+        }
       ]
     },
     {
@@ -27,14 +39,25 @@
       "version": "1.0.6",
       "author": "FinalDevHQ",
       "icon": "📖",
-      "tags": ["系统", "工具"],
+      "tags": [
+        "系统",
+        "工具"
+      ],
       "hasUI": true,
       "minRuntimeVersion": "0.1.0",
       "homepage": "https://github.com/FinalDevHQ/Dian-plugin-help",
       "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-help/releases/download/v1.0.6/dian-help.zip",
       "changelog": [
-        { "version": "1.0.6", "date": "2026-05-26", "notes": "CI 统一为自包含构建模式。" },
-        { "version": "1.0.0", "date": "2026-05-10", "notes": "初始版本，支持自定义触发指令、按 bot 范围列出已注册指令、Web UI 实时配置。" }
+        {
+          "version": "1.0.6",
+          "date": "2026-05-26",
+          "notes": "CI 统一为自包含构建模式。"
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-05-10",
+          "notes": "初始版本，支持自定义触发指令、按 bot 范围列出已注册指令、Web UI 实时配置。"
+        }
       ]
     },
     {
@@ -44,14 +67,25 @@
       "version": "1.0.4",
       "author": "FinalDevHQ",
       "icon": "🛠️",
-      "tags": ["系统", "工具"],
+      "tags": [
+        "系统",
+        "工具"
+      ],
       "hasUI": true,
       "minRuntimeVersion": "0.1.0",
       "homepage": "https://github.com/FinalDevHQ/Dian-plugin-dev-sync",
       "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-dev-sync/releases/download/v1.0.4/dian-dev-sync.zip",
       "changelog": [
-        { "version": "1.0.4", "date": "2026-05-26", "notes": "迁移至框架 PluginStore，移除独立数据库。" },
-        { "version": "1.0.0", "date": "2026-05-18", "notes": "初始版本，支持 WebSocket 认证、构建产物远程推送、自动热重载、Web UI 管理与同步历史记录。" }
+        {
+          "version": "1.0.4",
+          "date": "2026-05-26",
+          "notes": "迁移至框架 PluginStore，移除独立数据库。"
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-05-18",
+          "notes": "初始版本，支持 WebSocket 认证、构建产物远程推送、自动热重载、Web UI 管理与同步历史记录。"
+        }
       ]
     },
     {
@@ -61,14 +95,26 @@
       "version": "1.0.2",
       "author": "FinalDevHQ",
       "icon": "🐙",
-      "tags": ["工具", "通知", "UI"],
+      "tags": [
+        "工具",
+        "通知",
+        "UI"
+      ],
       "hasUI": true,
       "minRuntimeVersion": "0.2.0",
       "homepage": "https://github.com/FinalDevHQ/Dian-plugin-github",
       "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-github/releases/download/v1.0.2/github-sub.zip",
       "changelog": [
-        { "version": "1.0.2", "date": "2026-05-26", "notes": "CI 统一为自包含构建模式。" },
-        { "version": "1.0.1", "date": "2026-05-23", "notes": "初始版本，支持仓库/用户事件订阅、多 Token 轮换、日志持久化、Web UI 管理面板。" }
+        {
+          "version": "1.0.2",
+          "date": "2026-05-26",
+          "notes": "CI 统一为自包含构建模式。"
+        },
+        {
+          "version": "1.0.1",
+          "date": "2026-05-23",
+          "notes": "初始版本，支持仓库/用户事件订阅、多 Token 轮换、日志持久化、Web UI 管理面板。"
+        }
       ]
     },
     {
@@ -78,14 +124,26 @@
       "version": "1.1.0",
       "author": "FinalDevHQ",
       "icon": "🎮",
-      "tags": ["工具", "游戏", "UI"],
+      "tags": [
+        "工具",
+        "游戏",
+        "UI"
+      ],
       "hasUI": true,
       "minRuntimeVersion": "0.2.7",
       "homepage": "https://github.com/FinalDevHQ/Dian-plugin-mc",
       "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-mc/releases/download/v1.1.0/dian-plugin-mc.zip",
       "changelog": [
-        { "version": "1.1.0", "date": "2026-05-26", "notes": "查询历史迁移至 PluginStore 持久化存储，支持清空历史。" },
-        { "version": "1.0.1", "date": "2026-05-25", "notes": "初始版本，支持 MC 服务器状态查询、图片渲染、自定义模板、服务器列表管理、查询历史、Web UI 管理面板。" }
+        {
+          "version": "1.1.0",
+          "date": "2026-05-26",
+          "notes": "查询历史迁移至 PluginStore 持久化存储，支持清空历史。"
+        },
+        {
+          "version": "1.0.1",
+          "date": "2026-05-25",
+          "notes": "初始版本，支持 MC 服务器状态查询、图片渲染、自定义模板、服务器列表管理、查询历史、Web UI 管理面板。"
+        }
       ]
     },
     {
@@ -95,14 +153,26 @@
       "version": "1.1.0",
       "author": "FinalDevHQ",
       "icon": "🛡️",
-      "tags": ["管理", "权限", "UI"],
+      "tags": [
+        "管理",
+        "权限",
+        "UI"
+      ],
       "hasUI": true,
       "minRuntimeVersion": "0.2.7",
       "homepage": "https://github.com/FinalDevHQ/Dian-plugin-qq-manager",
       "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-qq-manager/releases/download/v1.1.0/dian-plugin-qq-manager.zip",
       "changelog": [
-        { "version": "1.1.0", "date": "2026-05-26", "notes": "启用 PluginStore 表跟踪，新增黑名单提示、退群拉黑、群设置等指令。" },
-        { "version": "1.0.0", "date": "2026-05-20", "notes": "初始版本，支持主人管理、群管角色、黑白名单、Web UI 管理面板。" }
+        {
+          "version": "1.1.0",
+          "date": "2026-05-26",
+          "notes": "启用 PluginStore 表跟踪，新增黑名单提示、退群拉黑、群设置等指令。"
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-05-20",
+          "notes": "初始版本，支持主人管理、群管角色、黑白名单、Web UI 管理面板。"
+        }
       ]
     },
     {
@@ -112,14 +182,25 @@
       "version": "1.0.1",
       "author": "FinalDevHQ",
       "icon": "🖼️",
-      "tags": ["系统", "工具"],
+      "tags": [
+        "系统",
+        "工具"
+      ],
       "hasUI": false,
       "minRuntimeVersion": "0.2.0",
       "homepage": "https://github.com/FinalDevHQ/Dian-plugin-puppeteer",
       "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-puppeteer/releases/download/v1.0.1/dian-plugin-puppeteer.zip",
       "changelog": [
-        { "version": "1.0.1", "date": "2026-05-26", "notes": "CI 统一为自包含构建模式。" },
-        { "version": "1.0.0", "date": "2026-05-15", "notes": "初始版本，提供 HTML 转图片渲染 API。" }
+        {
+          "version": "1.0.1",
+          "date": "2026-05-26",
+          "notes": "CI 统一为自包含构建模式。"
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-05-15",
+          "notes": "初始版本，提供 HTML 转图片渲染 API。"
+        }
       ]
     }
   ]
