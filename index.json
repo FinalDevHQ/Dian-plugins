@@ -18,7 +18,7 @@
       "hasUI": true,
       "minRuntimeVersion": "0.2.7",
       "homepage": "https://github.com/FinalDevHQ/Dian-plugin-template",
-      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-template/releases/download/v1.1.0/ping-pong.zip",
+      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-template/releases/download/v1.1.0/hello-world.zip",
       "changelog": [
         {
           "version": "1.1.0",
@@ -161,7 +161,7 @@
       "hasUI": true,
       "minRuntimeVersion": "0.2.7",
       "homepage": "https://github.com/FinalDevHQ/Dian-plugin-qq-manager",
-      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-qq-manager/releases/download/v1.1.0/dian-plugin-qq-manager.zip",
+      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-qq-manager/releases/download/v1.1.0/qq-manager.zip",
       "changelog": [
         {
           "version": "1.1.0",
