@@ -1,7 +1,7 @@
 {
   "$schema": "./schema.json",
   "apiVersion": "1",
-  "updatedAt": "2026-05-26",
+  "updatedAt": "2026-05-28",
   "plugins": [
     {
       "name": "dian-help",
@@ -34,19 +34,24 @@
     {
       "name": "dian-dev-sync",
       "displayName": "Dev Sync",
-      "description": "远程开发同步服务，通过 WebSocket 实时接收构建产物，自动解压并热重载到 Dian 实例。",
-      "version": "1.0.4",
+      "description": "Dian 插件远程开发同步服务（支持热更新）",
+      "version": "1.0.5",
       "author": "FinalDevHQ",
-      "icon": "🛠️",
+      "icon": "🔌",
       "tags": [
         "系统",
         "工具"
       ],
-      "hasUI": true,
+      "hasUI": false,
       "minRuntimeVersion": "0.1.0",
       "homepage": "https://github.com/FinalDevHQ/Dian-plugin-dev-sync",
-      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-dev-sync/releases/download/v1.0.4/dian-dev-sync.zip",
+      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-dev-sync/releases/download/v1.0.5/dian-dev-sync.zip",
       "changelog": [
+        {
+          "version": "1.0.5",
+          "date": "2026-05-28",
+          "notes": "**Full Changelog**: https://github.com/FinalDevHQ/Dian-plugin-dev-sync/compare/v1.0.4...v1.0.5"
+        },
         {
           "version": "1.0.4",
           "date": "2026-05-26",
