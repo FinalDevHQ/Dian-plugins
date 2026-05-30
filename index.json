@@ -128,35 +128,6 @@
       ]
     },
     {
-      "name": "dian-plugin-qq-manager",
-      "displayName": "QQ 群管",
-      "description": "QQ 群管权限管理插件，支持主人/群管/黑白名单/群设置，附 Web UI 管理面板。",
-      "version": "1.1.0",
-      "author": "FinalDevHQ",
-      "icon": "🛡️",
-      "tags": [
-        "管理",
-        "权限",
-        "UI"
-      ],
-      "hasUI": true,
-      "minRuntimeVersion": "0.2.7",
-      "homepage": "https://github.com/FinalDevHQ/Dian-plugin-qq-manager",
-      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-qq-manager/releases/download/v1.1.0/qq-manager.zip",
-      "changelog": [
-        {
-          "version": "1.1.0",
-          "date": "2026-05-26",
-          "notes": "启用 PluginStore 表跟踪，新增黑名单提示、退群拉黑、群设置等指令。"
-        },
-        {
-          "version": "1.0.0",
-          "date": "2026-05-20",
-          "notes": "初始版本，支持主人管理、群管角色、黑白名单、Web UI 管理面板。"
-        }
-      ]
-    },
-    {
       "name": "dian-plugin-puppeteer",
       "displayName": "Puppeteer 渲染",
       "description": "Puppeteer 浏览器渲染服务插件，为其他插件提供 HTML 转图片能力。",
