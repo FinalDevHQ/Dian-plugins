@@ -146,7 +146,7 @@
       "hasUI": true,
       "minRuntimeVersion": "0.2.7",
       "homepage": "https://github.com/FinalDevHQ/Dian-plugin-puppeteer",
-      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-puppeteer/releases/download/v1.0.3/puppeteer.zip",
+      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-puppeteer/releases/download/v1.0.3/dian-plugin-puppeteer.zip",
       "changelog": [
         {
           "version": "1.0.3",
