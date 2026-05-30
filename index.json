@@ -130,10 +130,10 @@
     {
       "name": "dian-plugin-puppeteer",
       "displayName": "Puppeteer 渲染",
-      "description": "Puppeteer 浏览器渲染服务插件，为其他插件提供 HTML 转图片能力。",
-      "version": "1.0.1",
+      "description": "Dian Puppeteer 渲染服务插件 - 提供 HTML/模板截图渲染 API",
+      "version": "1.0.3",
       "author": "FinalDevHQ",
-      "icon": "🖼️",
+      "icon": "🔌",
       "tags": [
         "系统",
         "工具"
@@ -141,8 +141,13 @@
       "hasUI": false,
       "minRuntimeVersion": "0.2.0",
       "homepage": "https://github.com/FinalDevHQ/Dian-plugin-puppeteer",
-      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-puppeteer/releases/download/v1.0.1/dian-plugin-puppeteer.zip",
+      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-puppeteer/releases/download/v1.0.3/dian-plugin-puppeteer.zip",
       "changelog": [
+        {
+          "version": "1.0.3",
+          "date": "2026-05-30",
+          "notes": "* chore(deps): bump @myfinal/shared from 0.2.4 to 0.2.5 by @dependabot[bot] in https://github.com/FinalDevHQ/Dian-plugin-puppeteer/pull/4 * @dependabot[bot] made their first contribution in https://github.com/FinalDevHQ/Dian-plugin-puppeteer/pull/4"
+        },
         {
           "version": "1.0.1",
           "date": "2026-05-26",
