@@ -128,7 +128,7 @@
       ]
     },
     {
-      "name": "dian-plugin-puppeteer",
+      "name": "puppeteer",
       "displayName": "Puppeteer 渲染",
       "description": "Puppeteer 浏览器渲染服务插件，为其他插件提供 HTML 转图片能力。",
       "version": "1.0.3",
