@@ -62,20 +62,25 @@
     {
       "name": "github-sub",
       "displayName": "GitHub 订阅推送",
-      "description": "GitHub 仓库/用户事件订阅推送插件，支持 commit/PR/issue/评论等实时通知，附 Web UI 管理面板。",
-      "version": "1.0.2",
+      "description": "GitHub 仓库/用户订阅推送插件",
+      "version": "1.0.5",
       "author": "FinalDevHQ",
-      "icon": "🐙",
+      "icon": "🔌",
       "tags": [
         "工具",
         "通知",
         "UI"
       ],
-      "hasUI": true,
+      "hasUI": false,
       "minRuntimeVersion": "0.2.0",
       "homepage": "https://github.com/FinalDevHQ/Dian-plugin-github",
-      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-github/releases/download/v1.0.2/github-sub.zip",
+      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-github/releases/download/v1.0.5/github-sub.zip",
       "changelog": [
+        {
+          "version": "1.0.5",
+          "date": "2026-05-29",
+          "notes": "**Full Changelog**: https://github.com/FinalDevHQ/Dian-plugin-github/compare/v1.0.4...v1.0.5"
+        },
         {
           "version": "1.0.2",
           "date": "2026-05-26",
