@@ -208,8 +208,8 @@
     {
       "name": "qq-group-manage",
       "displayName": "QQ 群组管理",
-      "description": "功能全面的QQ群组管理插件，支持权限管理、成员管理、黑白名单、广告杀手、群内提示、发言统计、名片系统、定时任务、图片模式、运行状态等。",
-      "version": "1.0.1",
+      "description": "QQ群组管理插件 - 权限管理、成员管理、黑白名单、广告杀手、定时任务等",
+      "version": "1.0.2",
       "author": "FinalDevHQ",
       "icon": "👥",
       "tags": [
@@ -217,11 +217,16 @@
         "群组",
         "UI"
       ],
-      "hasUI": true,
+      "hasUI": false,
       "minRuntimeVersion": "0.2.0",
       "homepage": "https://github.com/FinalDevHQ/Dian-plugin-qq-group-manage",
-      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-qq-group-manage/releases/download/v1.0.1/qq-group-manage.zip",
+      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-qq-group-manage/releases/download/v1.0.2/qq-group-manage.zip",
       "changelog": [
+        {
+          "version": "1.0.2",
+          "date": "2026-05-30",
+          "notes": "**Full Changelog**: https://github.com/FinalDevHQ/Dian-plugin-qq-group-manage/compare/v1.0.1...v1.0.2"
+        },
         {
           "version": "1.0.1",
           "date": "2026-05-30",
