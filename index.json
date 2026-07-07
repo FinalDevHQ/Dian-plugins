@@ -1,7 +1,7 @@
 {
   "$schema": "./schema.json",
   "apiVersion": "1",
-  "updatedAt": "2026-07-06",
+  "updatedAt": "2026-07-07",
   "plugins": [
     {
       "name": "dian-help",
@@ -73,7 +73,7 @@
       "name": "github-sub",
       "displayName": "GitHub 订阅推送",
       "description": "GitHub 仓库/用户订阅推送插件",
-      "version": "1.2.1",
+      "version": "1.2.3",
       "author": "FinalDevHQ",
       "icon": "🔌",
       "tags": [
@@ -84,8 +84,13 @@
       "hasUI": false,
       "minRuntimeVersion": "0.2.0",
       "homepage": "https://github.com/FinalDevHQ/Dian-plugin-github",
-      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-github/releases/download/v1.2.1/github-sub.zip",
+      "downloadUrl": "https://github.com/FinalDevHQ/Dian-plugin-github/releases/download/v1.2.3/github-sub.zip",
       "changelog": [
+        {
+          "version": "1.2.3",
+          "date": "2026-07-07",
+          "notes": "**Full Changelog**: https://github.com/FinalDevHQ/Dian-plugin-github/compare/v1.2.2...v1.2.3"
+        },
         {
           "version": "1.2.1",
           "date": "2026-07-06",
